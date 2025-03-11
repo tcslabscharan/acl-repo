@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       java_ver:
-        default: '18'
+        default: '17'
         type: choice
         options:
           - '11'
@@ -11,6 +11,6 @@ on:
 jobs:
   build:
     name: CI Deployment
-    uses: gh-actions/.github/workflows/hello.yaml@v1
+    uses: tcslabscharan/gh-actions/.github/workflows/hello.yaml@v1
     with:
       java_ver: ${{ inputs.java_ver }}
