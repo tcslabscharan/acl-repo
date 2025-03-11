@@ -16,6 +16,7 @@ jobs:
           name: charan
           path: data.txt
   deploy:
+    needs: [ build ]
     name: CI Container
     runs-on: ubuntu-latest
     steps:
