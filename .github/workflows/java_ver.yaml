@@ -11,6 +11,6 @@ on:
 jobs:
   build:
     name: CI Deployment
-    uses: tcslabscharan/gh-actions/.github/workflow/hello.yaml@v1
+    uses: tcslabscharan/gh-actions/.github/workflows/hello.yaml@v1
     with:
       java_ver: ${{ inputs.java_ver }}
