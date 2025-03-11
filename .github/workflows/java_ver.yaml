@@ -1,0 +1,12 @@
+name: Java version call Pipeline
+on:
+  workflow_dispatch:
+    inputs:
+      java_ver:
+        choice:
+          - '11'
+          - '12'
+jobs:
+  build:
+    name: CI Deployment
+    uses: gh-actions/.github/workflow/hello.yaml
