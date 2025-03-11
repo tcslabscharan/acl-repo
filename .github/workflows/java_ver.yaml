@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       java_ver:
-        default: '18'
+        default: '17'
         type: choice
         options:
           - '11'
