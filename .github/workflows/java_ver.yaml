@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
     inputs:
       java_ver:
-        choice:
+        type: choice
+        options:
           - '11'
           - '12'
 jobs:
