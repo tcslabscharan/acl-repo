@@ -5,7 +5,7 @@ on:
       - main
 jobs:
   build:
-    name: Self hosted
+    name: Self hosted runner
     runs-on: self-hosted
     steps:
       - name: Creating file
