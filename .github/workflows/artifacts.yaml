@@ -21,7 +21,7 @@ jobs:
     name: CI Container
     runs-on: ubuntu-latest
     steps:
-      - name: Creating file
+      - name: Creating file on
         run: echo "Hello world" >> data.txt
       - name: Upload artifatcs
         uses: actions/download-artifact@v4
