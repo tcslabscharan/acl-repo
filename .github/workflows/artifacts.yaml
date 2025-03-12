@@ -18,6 +18,7 @@ jobs:
   deploy:
     needs: [ build ]
     environment: 'prd'
+    approvers: 'DevOps'
     name: CI Container
     runs-on: ubuntu-latest
     steps:
