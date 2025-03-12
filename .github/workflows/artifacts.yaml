@@ -17,6 +17,7 @@ jobs:
           path: data.txt
   deploy:
     needs: [ build ]
+    environment: 'prd'
     name: CI Container
     runs-on: ubuntu-latest
     steps:
